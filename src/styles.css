@@ -1,0 +1,70 @@
+/* Start of SCSS File */
+:root {
+  --tsaov: #ffda2a;
+  --lavan: var(--lavan);
+  --gufan: 'Raleway', sans-serif;
+}
+
+body {
+  line-height: 1.4;
+  font-family: var(--gufan);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.place {
+  padding-left: 10vw;
+  line-height: 1.4;
+  padding-right: 9vw;
+  width: 80vw;
+}
+
+@media (max-width: 768px) {
+  .place {
+    padding-right: 0;
+  }
+}
+
+section {
+  padding-top: 7vw;
+  padding-bottom: 7vw;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.ityflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .ityflex {
+    display: block;
+  }
+}
+
+.flexcenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=styles.css.map */

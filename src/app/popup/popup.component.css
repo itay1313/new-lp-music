@@ -1,0 +1,342 @@
+.ppup {
+  position: relative;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .ppup .place {
+    width: 70vw;
+    margin: 0 auto;
+  }
+}
+
+.ppup h4 {
+  font-size: 35px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--lavan);
+}
+
+.ppup .form-wrapper {
+  height: 100%;
+}
+
+.ppup .form-wrapper h3 {
+  font-size: 35px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--lavan);
+}
+
+.ppup .form-wrapper .formorder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ppup .form-wrapper form {
+  padding-top: 20px;
+}
+
+.ppup .form-wrapper form .input-group {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.ppup .form-wrapper form .input-group label {
+  position: absolute;
+  color: #757575;
+  pointer-events: none;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: scale(0.9) translateY(40%);
+          transform: scale(0.9) translateY(40%);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  left: 15px;
+  padding: 3px 5px;
+}
+
+.ppup .form-wrapper form .input-group label:not(.animate-label) {
+  opacity: 0;
+}
+
+.ppup .form-wrapper form .input-group label.animate-label {
+  -webkit-transform: scale(0.6) translateY(-35%);
+          transform: scale(0.6) translateY(-35%);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  background: black;
+  color: var(--tsaov);
+}
+
+.ppup .form-wrapper form .input-group .focus-visible {
+  background: black !important;
+  border-color: var(--tsaov);
+}
+
+.ppup .form-wrapper form .input-group input,
+.ppup .form-wrapper form .input-group textarea,
+.ppup .form-wrapper form .input-group select {
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: var(--lavan);
+  border-radius: 4px;
+  border: solid 1px #bdbdbd;
+  background-color: #bdbdbd00;
+}
+
+.ppup .form-wrapper form .input-group input:focus, .ppup .form-wrapper form .input-group input:active,
+.ppup .form-wrapper form .input-group textarea:focus,
+.ppup .form-wrapper form .input-group textarea:active,
+.ppup .form-wrapper form .input-group select:focus,
+.ppup .form-wrapper form .input-group select:active {
+  outline: none;
+}
+
+.ppup .form-wrapper form .input-group input:not([type="checkbox"]),
+.ppup .form-wrapper form .input-group textarea,
+.ppup .form-wrapper form .input-group select {
+  width: 17vw;
+  height: 46px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .ppup .form-wrapper form .input-group input:not([type="checkbox"]),
+  .ppup .form-wrapper form .input-group textarea,
+  .ppup .form-wrapper form .input-group select {
+    width: 100%;
+  }
+}
+
+.ppup .form-wrapper form .input-group textarea {
+  height: 96px;
+}
+
+.ppup .form-wrapper form .radioz {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ppup .form-wrapper form .radioz span {
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #bdbdbd;
+}
+
+.ppup .form-wrapper form .radioz label {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #bdbdbd;
+}
+
+.ppup .form-wrapper form .radioz input {
+  width: 21px;
+  height: 19px;
+  border: solid 1px #979797;
+  margin: 0 5px;
+}
+
+.ppup .form-wrapper form .ityflex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ppup .form-wrapper form .rightform .toptitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .ppup .form-wrapper form .rightform .toptitle {
+    margin-top: 40px;
+  }
+}
+
+.ppup .form-wrapper form .rightform .toptitle h5 {
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: 0.68px;
+  text-align: left;
+  color: var(--lavan);
+  margin-bottom: 15px;
+}
+
+.ppup .form-wrapper form .rightform .toptitle span {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: center;
+  color: #bdbdbd;
+  margin-left: 15px;
+}
+
+.ppup .form-wrapper form .rightform .uploadfilez {
+  height: 211px;
+  border-radius: 4px;
+  border: solid 1px #bdbdbd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.ppup .form-wrapper form .rightform .uploadfilez label {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--lavan);
+}
+
+.ppup .form-wrapper form .rightform .uploadfilez label span {
+  color: var(--tsaov);
+  font-weight: 500;
+}
+
+.ppup .form-wrapper form .rightform .uploadfilez input#upload {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #4440;
+}
+
+.ppup .form-wrapper form .rightform .uploadfilez input[type="file"] {
+  opacity: 0.02;
+  /* not FULLY transparent */
+  filter: alpha(opacity=0);
+  /* IE8 and lower */
+  zoom: 1;
+}
+
+.ppup .form-wrapper form .rightform .uploadfilez h6 {
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.09;
+  letter-spacing: normal;
+  text-align: center;
+  color: #bdbdbd;
+}
+
+.ppup .form-wrapper form .rightform label {
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #bdbdbd;
+}
+
+.ppup .form-wrapper form .rightform input {
+  width: 11px;
+  height: 11px;
+  border-radius: 1px;
+  border: solid 1px #bdbdbd;
+  background-color: #bdbdbd;
+  margin-right: 15px;
+}
+
+.ppup .form-wrapper form .buttn {
+  border-radius: 28.5px;
+  background-color: var(--tsaov);
+  font-family: var(--gufan);
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #171717;
+  padding: 12px 39px;
+  outline: none;
+  margin-top: 40px;
+}
+
+.ppup .form-wrapper form .buttn:hover {
+  background: black;
+  color: var(--lavan);
+  border-color: var(--lavan);
+}
+
+@media (max-width: 768px) {
+  .ppup .form-wrapper form .buttn {
+    margin-bottom: 40px;
+  }
+}
+
+.ppup button.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: none;
+  color: var(--lavan);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  font-size: 22px;
+  outline: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=popup.component.css.map */

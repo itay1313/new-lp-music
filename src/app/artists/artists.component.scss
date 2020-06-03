@@ -1,0 +1,151 @@
+.artists {
+    background: url("../../assets/img/artists.jpg") no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h2 {
+        font-family: var(--gufan);
+        font-size: 50px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: var(--lavan);
+        text-align: center;
+        @media (max-width: 768px) {
+            margin-bottom: 5vh;
+            font-size: 38px;
+        }
+    }
+    .ityflex {
+        justify-content: space-between;
+        width: 84%;
+        margin: 0 auto;
+    }
+    .artist {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: black;
+        color: var(--lavan);
+        min-height: 368px;
+        justify-content: flex-end;
+        margin: 1vw;
+        padding: 1vw;
+        margin-top: 7vh;
+        filter: grayscale(0%);
+        transition: all 0.5s ease;
+        &:hover {
+            filter: grayscale(100%);
+        }
+        h3 {
+            font-family: var(--gufan);
+            font-size: 30px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.17;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--lavan);
+            @media (max-width: 768px) {
+                font-size: 20px;
+            }
+        }
+        .ainfo {
+            display: flex;
+            margin-top: 5px;
+            font-family: var(--gufan);
+            font-size: 13px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            .aname {
+                margin-right: 15px;
+                color: var(--tsaov);
+            }
+        }
+        &:first-child {
+            background: url("../../assets/img/first.png") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background: url("../../assets/img/second.png") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            background: url("../../assets/img/third.png") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        &:nth-child(4) {
+            background: url("../../assets/img/fourth.png") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    }
+}
+
+.doin {
+    padding-top: 15vh;
+    .ityflex {
+      display: flex;
+      flex-wrap: wrap;
+      .itemtext {
+        width: 30%;
+        margin-top: 5vh;
+        @media (max-width: 768px) {
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+        h4 {
+          font-family: var(--gufan);
+          font-size: 20px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: var(--tsaov);
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+        p {
+          font-family: var(--gufan);
+          font-size: 17px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.24px;
+          text-align: left;
+          color: var(--lavan);
+          margin-top: 1vh;
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+  }

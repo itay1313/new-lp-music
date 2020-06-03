@@ -1,0 +1,85 @@
+section.hero {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("././assets/img/hero.png") no-repeat center top;
+  background-size: cover;
+}
+
+section.hero .logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+section.hero .place {
+  width: 27vw;
+}
+
+@media (max-width: 768px) {
+  section.hero .place {
+    width: 100%;
+  }
+}
+
+section.hero .place h1 {
+  font-family: var(--gufan);
+  font-size: 70px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--lavan);
+}
+
+@media (max-width: 768px) {
+  section.hero .place h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+section.hero .place p {
+  font-family: var(--gufan);
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--lavan);
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  section.hero .place p {
+    font-size: 16px;
+  }
+}
+
+section.hero .place img {
+  margin-top: 10vh;
+}
+
+@media (max-width: 768px) {
+  section.hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+section.hero .godown {
+  cursor: pointer;
+}
+/*# sourceMappingURL=hero.component.css.map */

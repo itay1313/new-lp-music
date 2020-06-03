@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61.5" height="61.5" viewBox="0 0 61.5 61.5">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+      g {
+                  -moz-animation: jump 2s infinite;
+  -webkit-animation: jump 2s infinite;
+  animation: jump 2s infinite;
+      }
+@keyframes jump {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+    </style>
+  </defs>
+  <circle id="Oval" class="cls-1" cx="30.75" cy="30.75" r="30"/>
+  <g>
+    <path id="Path_2" data-name="Path 2" class="cls-2" d="M461.857,648.714l7.39,6.676,7.39-6.676" transform="translate(-438.25 -612.25)"/>
+    <path id="Path_3" data-name="Path 3" class="cls-2" d="M469.134,655.651V630.976" transform="translate(-438.25 -612.25)"/>
+  </g>
+</svg>

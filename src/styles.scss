@@ -1,0 +1,124 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$itayweb-primary: mat-palette($mat-indigo);
+$itayweb-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$itayweb-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$itayweb-theme: mat-light-theme($itayweb-primary, $itayweb-accent, $itayweb-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($itayweb-theme);
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$itayweb-primary: mat-palette($mat-indigo);
+$itayweb-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$itayweb-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$itayweb-theme: mat-light-theme($itayweb-primary, $itayweb-accent, $itayweb-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($itayweb-theme);
+
+/* Start of SCSS File */
+:root {
+  --tsaov: #ffda2a;
+  --lavan: #ffffff;
+  --gufan: "Raleway", sans-serif;
+  --sidespace: 9vw;
+}
+
+body {
+  line-height: 1.4;
+  font-family: var(--gufan);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.place {
+  padding-left: var(--sidespace);
+  line-height: 1.4;
+  padding-right: var(--sidespace);
+  width: 80vw;
+  @media (max-width: 768px) {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+}
+section {
+  padding-top: 7vw;
+  padding-bottom: 7vw;
+  @media (max-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.ityflex {
+  display: flex;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+.flexcenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.itayppup {
+  max-width: 100% !important;
+  width: 100%;
+  height: 100%;
+}
+::ng-deep #mat-dialog-1 {
+  background: #000000f2;
+}
+@media (max-width: 768px) {
+  .centermobile {
+    text-align: center;
+  }
+}

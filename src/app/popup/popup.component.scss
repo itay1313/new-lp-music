@@ -1,0 +1,268 @@
+.ppup {
+    position: relative;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+    .place {
+        @media (min-width: 768px) {
+            width: 70vw;
+            margin: 0 auto;
+        }
+    }
+    h4 {
+        font-size: 35px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--lavan);
+    }
+
+    .form-wrapper {
+        height: 100%;
+        h3 {
+            font-size: 35px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.29;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--lavan);
+        }
+
+        .formorder {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form {
+            padding-top: 20px;
+
+            .input-group {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                font-family: sans-serif;
+                label {
+                    position: absolute;
+                    color: #757575;
+                    pointer-events: none;
+                    transform-origin: 0 0;
+                    transform: scale(0.9) translateY(40%);
+                    transition: transform 0.2s linear;
+                    left: 15px;
+                    padding: 3px 5px;
+                    &:not(.animate-label) {
+                        opacity: 0;
+                    }
+                }
+                label.animate-label {
+                    transform: scale(0.6) translateY(-35%);
+                    transition: transform 0.2s linear;
+                    background: black;
+                    color: var(--tsaov);
+                }
+                .focus-visible {
+                    background: black !important;
+                    border-color: var(--tsaov);
+                }
+
+                input,
+                textarea,
+                select {
+                    padding: 10px 15px;
+                    box-sizing: border-box;
+                    color: var(--lavan);
+                    border-radius: 4px;
+                    border: solid 1px #bdbdbd;
+                    background-color: #bdbdbd00;
+                    &:focus,
+                    &:active {
+                        outline: none;
+                    }
+                }
+
+                input:not([type="checkbox"]),
+                textarea,
+                select {
+                    width: 17vw;
+                    height: 46px;
+                    margin-bottom: 20px;
+                    @media (max-width: 768px) {
+                        width: 100%;
+                    }
+                }
+                textarea {
+                    height: 96px;
+                }
+            }
+            .radioz {
+                align-items: center;
+                span {
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #bdbdbd;
+                }
+                label {
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #bdbdbd;
+                }
+                input {
+                    width: 21px;
+                    height: 19px;
+                    border: solid 1px #979797;
+                    margin: 0 5px;
+                }
+            }
+            .ityflex {
+                justify-content: space-between;
+            }
+            .rightform {
+                .toptitle {
+                    display: flex;
+                    @media (max-width: 768px) {
+                        margin-top: 40px;
+                    }
+                    h5 {
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.22;
+                        letter-spacing: 0.68px;
+                        text-align: left;
+                        color: var(--lavan);
+                        margin-bottom: 15px;
+                    }
+                    span {
+                        font-size: 16px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.44;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #bdbdbd;
+                        margin-left: 15px;
+                    }
+                }
+                .uploadfilez {
+                    height: 211px;
+                    border-radius: 4px;
+                    border: solid 1px #bdbdbd;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    margin-bottom: 40px;
+                    label {
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 2.22;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: var(--lavan);
+                        span {
+                            color: var(--tsaov);
+                            font-weight: 500;
+                        }
+                    }
+                    input#upload {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: #4440;
+                    }
+                    input[type="file"] {
+                        opacity: 0.02; /* not FULLY transparent */
+                        filter: alpha(opacity=0); /* IE8 and lower */
+                        zoom: 1;
+                    }
+                    h6 {
+                        font-size: 11px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 2.09;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #bdbdbd;
+                    }
+                }
+                label {
+                    font-size: 12px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #bdbdbd;
+                }
+                input {
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 1px;
+                    border: solid 1px #bdbdbd;
+                    background-color: #bdbdbd;
+                    margin-right: 15px;
+                }
+            }
+            .buttn {
+                border-radius: 28.5px;
+                background-color: var(--tsaov);
+                font-family: var(--gufan);
+                font-size: 20px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #171717;
+                padding: 12px 39px;
+                outline: none;
+                margin-top: 40px;
+                &:hover {
+                    background: black;
+                    color: var(--lavan);
+                    border-color: var(--lavan);
+                }
+                @media (max-width: 768px) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    button.close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: none;
+        color: var(--lavan);
+        box-shadow: none;
+        border: 0;
+        font-size: 22px;
+        outline: none;
+        cursor: pointer;
+    }
+
+}

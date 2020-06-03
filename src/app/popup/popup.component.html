@@ -1,0 +1,89 @@
+<section class="ppup">
+    <div class="place">
+        <button class="close" mat-button (click)="closeDialog()">X</button>
+        <div class="form-wrapper">
+
+            <h3>Submit your music</h3>
+            <form #itayForm="ngForm" (ngSubmit)="onSubmissionForm(itayForm)">
+                <div class="ityflex">
+                    <div class="formorder">
+                        <div (click)="labelTop()" class="input-group">
+                            <label for="name">Full name</label>
+                            <input ngModel name="name" type="text" id="name" required placeholder="Your Full name" />
+                        </div>
+                        <div (click)="labelTop()" class="input-group">
+                            <label for="email">E-mail</label>
+                            <input ngModel type="text" name="email" id="email" required placeholder="Your E-mail" />
+                        </div>
+                        <div (click)="labelTop()" class="input-group">
+                            <label for="country">Country</label>
+
+                            <select ngModel name="country" id="country">
+                                <option value="Israel">Israel</option>
+                                <option value="Iran">Iran</option>
+                                <option value="Finland">Finland</option>
+                                <option value="Yaman">Yaman</option>
+                            </select>
+                        </div>
+                        <div (click)="labelTop()" class="input-group">
+                            <label for="bio">Bio</label>
+                            <textarea type="text" name="bio" id="bio" required placeholder="Bio"></textarea>
+                        </div>
+                        <div (click)="labelTop()" class="input-group">
+                            <label for="job">What do you do?</label>
+                            <input ngModel type="text" name="job" id="job" required placeholder="What do you do?" />
+                        </div>
+                        <div (click)="labelTop()" class="input-group">
+                            <label for="portfolio">Portfolio links</label>
+                            <input ngModel type="text" name="portfolio" id="portfolio" required
+                                placeholder="Portfolio links" />
+                        </div>
+                        <div (click)="labelTop()" class="ityflex radioz">
+                            <div><span>Are you registered with a PRO?</span>
+                            </div>
+                            <div class="ityflex">
+                                <input ngModel type="radio" id="yes" name="yes" value="yes">
+                                <label for="female">yes</label>
+                                <input ngModel type="radio" id="no" name="no" value="no">
+                                <label for="no">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rightform">
+                            <div class="toptitle">
+                                <h5>Upload music</h5><span>4-6 songs</span>
+                            </div>
+                            <div class="uploadfilez flexcenter">
+                                <label for="upload"><span>Click to upload</span> or drag and drop here</label>
+                                <h6>MP3 / WAV format</h6>
+
+                                <input ngModel type="file" id="upload" name="upload"
+                                    accept="audio/mp3,audio/*;capture=microphone">
+
+                            </div>
+
+                            <input ngModel type="checkbox" id="rights" name="rights" value="rights">
+                            <label for="rights"> I have full rights for the music.</label><br>
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                            <label for="vehicle2"> None of the songs are a cover of another artis's
+                                material.</label><br>
+                            <input type="checkbox" id="no" name="no" value="no">
+                            <label for="vehicle3"> The music is clear for use in any web platform, including YouTube
+                                monetization.</label>
+                        </div>
+                        <div class="flexcenter">
+
+                            <!-- <button [disabled]='itayForm.invalid' type="submit" class="buttn"> -->
+
+                            <button type="submit" class="buttn">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</section>

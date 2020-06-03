@@ -1,0 +1,62 @@
+section.hero {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    background: url("../../assets/img/hero.png") no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .logo {
+        position: absolute;
+        top:15px;
+        left:15px;
+    }
+    .place {
+        width: 27vw;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        h1 {
+            font-family: var(--gufan);
+            font-size: 70px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--lavan);
+            @media (max-width: 768px) {
+                font-size: 40px;
+                text-align: center;
+            }
+        }
+        p {
+            font-family: var(--gufan);
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--lavan);
+            margin-top: 15px;
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+        img {
+            margin-top: 10vh;
+        }
+    }
+    @media (max-width: 768px) {
+        display: flex;
+    }
+    .godown {
+        cursor: pointer;
+    }
+}

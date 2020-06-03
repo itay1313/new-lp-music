@@ -1,0 +1,185 @@
+.artists {
+  background: url("../../assets/img/artists.jpg") no-repeat center top;
+  background-size: cover;
+}
+
+.artists h2 {
+  font-family: var(--gufan);
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--lavan);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .artists h2 {
+    margin-bottom: 5vh;
+    font-size: 38px;
+  }
+}
+
+.artists .ityflex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 84%;
+  margin: 0 auto;
+}
+
+.artists .artist {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: black;
+  color: var(--lavan);
+  min-height: 368px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 1vw;
+  padding: 1vw;
+  margin-top: 7vh;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.artists .artist:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.artists .artist h3 {
+  font-family: var(--gufan);
+  font-size: 30px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--lavan);
+}
+
+@media (max-width: 768px) {
+  .artists .artist h3 {
+    font-size: 20px;
+  }
+}
+
+.artists .artist .ainfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+  font-family: var(--gufan);
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.artists .artist .ainfo .aname {
+  margin-right: 15px;
+  color: var(--tsaov);
+}
+
+.artists .artist:first-child {
+  background: url("../../assets/img/first.png") no-repeat center center;
+  background-size: cover;
+}
+
+.artists .artist:nth-child(2) {
+  background: url("../../assets/img/second.png") no-repeat center center;
+  background-size: cover;
+}
+
+.artists .artist:nth-child(3) {
+  background: url("../../assets/img/third.png") no-repeat center center;
+  background-size: cover;
+}
+
+.artists .artist:nth-child(4) {
+  background: url("../../assets/img/fourth.png") no-repeat center center;
+  background-size: cover;
+}
+
+.doin {
+  padding-top: 15vh;
+}
+
+.doin .ityflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.doin .ityflex .itemtext {
+  width: 30%;
+  margin-top: 5vh;
+}
+
+@media (max-width: 768px) {
+  .doin .ityflex .itemtext:first-child {
+    margin-top: 0;
+  }
+}
+
+.doin .ityflex .itemtext h4 {
+  font-family: var(--gufan);
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--tsaov);
+}
+
+@media (max-width: 768px) {
+  .doin .ityflex .itemtext h4 {
+    font-size: 16px;
+  }
+}
+
+.doin .ityflex .itemtext p {
+  font-family: var(--gufan);
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  text-align: left;
+  color: var(--lavan);
+  margin-top: 1vh;
+}
+
+@media (max-width: 768px) {
+  .doin .ityflex .itemtext p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .doin .ityflex .itemtext {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=artists.component.css.map */

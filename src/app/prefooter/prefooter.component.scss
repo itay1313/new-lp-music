@@ -1,0 +1,80 @@
+section.prefooter {
+  background: #5b617c;
+  .place {
+    width: 100%;
+    padding: 0;
+    .left-content {
+      width: 50%;
+      padding-left: 10vw;
+      h2 {
+        font-family: var(--gufan);
+        font-size: 60px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--lavan);
+        @media (max-width: 768px) {
+          font-size: 40px;
+        }
+      }
+      ul {
+        list-style: none;
+        margin: 4vh 0 8vh;
+
+        li {
+          font-size: 20px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.25;
+          letter-spacing: normal;
+          text-align: left;
+          color: var(--lavan);
+
+          &:before {
+            content: "✓";
+            margin-right: 15px;
+          }
+        }
+      }
+      a {
+        border-radius: 28.5px;
+        background-color: var(--tsaov);
+        font-family: var(--gufan);
+        font-size: 20px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #171717;
+        padding: 13px 25px;
+        cursor: pointer;
+        &:hover {
+          background: black;
+          color: var(--lavan);
+        }
+        
+      }
+      @media (max-width: 768px) {
+        width: 80vw;
+        padding: 0;
+        margin: 0 auto;
+      }
+    }
+    img {
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
+ ::ng-deep .mat-dialog-container  {
+  background: #000000e8;
+}
