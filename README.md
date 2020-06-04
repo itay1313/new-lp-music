@@ -1,5 +1,7 @@
 # Itayweb
-
+A Landing page,
+From Sketch To Angular,
+By Itay Haephrati
 Checkout the project in:
 https://itay1313.github.io/new-lp-music/
 
